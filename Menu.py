@@ -1,6 +1,10 @@
 import transpositionEncrypt, transpositionDecrypt, sys, pyperclip
 
 def main():
+    # Dictionary storing references for the menu. Easierr than an if, else sorter.
+    # They have no brackets as they will run instantly if they do! that is why
+    # myDict[choice] below ends with brackets. Still not sure how to simplify menu
+    # so I can only need to update the dictionary.
     myDict = {1: encryptTextInterface, 2: decryptTextInterface, 3:sys.exit}
     while True:
         print('Menu:\
